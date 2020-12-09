@@ -14,7 +14,7 @@ case object Day09 extends AocTools(day = 9) {
 
   def findWeakness(input: List[Long], invalid: Long): Option[Long] =
     (2 to input.length).view
-      .flatMap(input.sliding(_, 1))
+      .flatMap(input.sliding(_, 1).takeWhile(_.sum <= invalid))
       .find(_.sum == invalid)
       .map(result => result.min + result.max)
 
