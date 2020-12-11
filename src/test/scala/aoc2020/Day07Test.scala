@@ -1,4 +1,4 @@
-package day07
+package aoc2020
 
 import org.scalatest.funsuite.AnyFunSuite
 import org.scalatest.matchers.must.Matchers
@@ -6,7 +6,7 @@ import org.scalatest.{Inspectors, OptionValues}
 
 class Day07Test extends AnyFunSuite with Matchers with OptionValues with Inspectors {
 
-  import Day07._
+  import aoc2020.Day07._
 
   val example1 = """light red bags contain 1 bright white bag, 2 muted yellow bags.
                   |dark orange bags contain 3 bright white bags, 4 muted yellow bags.

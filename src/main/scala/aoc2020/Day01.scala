@@ -1,4 +1,4 @@
-package day01
+package aoc2020
 
 import shared._
 

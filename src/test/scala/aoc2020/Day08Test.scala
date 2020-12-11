@@ -1,4 +1,4 @@
-package day08
+package aoc2020
 
 import org.scalatest.funsuite.AnyFunSuite
 import org.scalatest.matchers.must.Matchers
@@ -6,7 +6,7 @@ import org.scalatest.{Inspectors, OptionValues}
 
 class Day08Test extends AnyFunSuite with Matchers with OptionValues with Inspectors {
 
-  import Day08._
+  import aoc2020.Day08._
 
   val example = """nop +0
                   |acc +1

@@ -1,7 +1,6 @@
-package day02
+package aoc2020
 
 import shared._
-import cats.implicits._
 
 case object Day02 extends AocTools(day = 2) {
 

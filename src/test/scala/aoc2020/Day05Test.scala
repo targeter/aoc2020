@@ -1,4 +1,4 @@
-package day05
+package aoc2020
 
 import org.scalatest.OptionValues
 import org.scalatest.funsuite.AnyFunSuite
@@ -6,7 +6,7 @@ import org.scalatest.matchers.must.Matchers
 import org.scalatest.prop.TableDrivenPropertyChecks
 
 class Day05Test extends AnyFunSuite with Matchers with OptionValues with TableDrivenPropertyChecks {
-  import Day05._
+  import aoc2020.Day05._
 
   test("test") {
     val examples = Table(

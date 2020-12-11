@@ -1,4 +1,4 @@
-package day01
+package aoc2020
 
 import org.scalatest.OptionValues
 import org.scalatest.funsuite.AnyFunSuite
@@ -6,7 +6,7 @@ import org.scalatest.matchers.must.Matchers
 
 class Day01Test extends AnyFunSuite with Matchers with OptionValues {
 
-  import Day01._
+  import aoc2020.Day01._
   private val exampleList = List(1721, 979, 366, 299, 675, 1456)
 
   test("findSum") {

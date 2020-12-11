@@ -1,4 +1,4 @@
-package day09
+package aoc2020
 
 import org.scalatest.funsuite.AnyFunSuite
 import org.scalatest.matchers.must.Matchers
@@ -27,7 +27,7 @@ class Day09Test extends AnyFunSuite with Matchers with OptionValues with Inspect
                   |309
                   |576""".stripMargin.split("\n").map(_.toLong).toList
 
-  import Day09._
+  import aoc2020.Day09._
   test("isValid") {
     isValid((1L to 25L).toList, 26L) must be(true)
     isValid((1L to 25L).toList, 49L) must be(true)

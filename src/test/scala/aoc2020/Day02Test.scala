@@ -1,6 +1,6 @@
-package day02
+package aoc2020
 
-import day02.Day02.{passwordsValid1, passwordsValid2}
+import aoc2020.Day02.{passwordsValid1, passwordsValid2}
 import org.scalatest.OptionValues
 import org.scalatest.funsuite.AnyFunSuite
 import org.scalatest.matchers.must.Matchers
