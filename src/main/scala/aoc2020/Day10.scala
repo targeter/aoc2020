@@ -16,7 +16,7 @@ case object Day10 extends AocTools(day = 10) {
   def diffs(input: List[Int]) = {
     (0 +: input.sorted :+ deviceJolts(input))
       .sliding(2)
-      .map {
+      .collect {
         case List(a, b) => b - a
       }
       .toList

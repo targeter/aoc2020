@@ -57,6 +57,7 @@ case object Day08 extends AocTools(day = 8) {
         case "acc" :: arg :: Nil => Acc(arg.toInt)
         case "jmp" :: arg :: Nil => Jmp(arg.toInt)
         case "nop" :: arg :: Nil => Nop(arg.toInt)
+        case _                   => sys.error(s"Cannot parse line: '${l}'")
       }
     }
 

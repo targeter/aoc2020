@@ -26,7 +26,7 @@ case object Day04 extends AocTools(day = 4) {
     "hcl" -> "#[0-9|a-f]{6}".r.matches _,
     "ecl" -> validEyeColors.contains _,
     "pid" -> "^\\d{9}$".r.matches _,
-    "cid" -> ((_:String) => true),
+    "cid" -> ((_: String) => true)
   ).toMap
 
   def parse(input: String): Seq[Map[String, String]] = {
