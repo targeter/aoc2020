@@ -4,6 +4,8 @@ abstract class AocTools(day: Int) {
 
   def inputLines: List[String] = InputGetter.get(day).toList
 
+  def inputLineInts: Seq[Int] = inputLines.flatMap(_.split(",").map(_.toInt)).toVector
+
   def inputInts: List[Int] = inputLines.map(_.toInt)
 
   def inputBlob = inputLines.mkString("\n")
