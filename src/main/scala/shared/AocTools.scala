@@ -18,6 +18,7 @@ package object ops {
   }
 
   implicit class StringOps[T](input: String) {
-    def asInts: List[Int] = input.split("\n").map(_.toInt).toList
+    def splitLines = input.split("\n").toList
+    def asInts: List[Int] = splitLines.map(_.toInt)
   }
 }
